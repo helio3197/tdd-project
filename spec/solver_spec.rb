@@ -18,8 +18,9 @@ describe Solver do
       expect { @solver.factorial(-5) }.to raise_error(ArgumentError)
     end
 
-    it 'The argument for factorial should be an integer, the otherwise it should rise an exepction error'
-    expect { @solver.factorial('5') }.to raise_error(ArgumentError)
+    it 'The argument for factorial should be an integer, the otherwise it should rise an exepction error' do
+      expect { @solver.factorial('5') }.to raise_error(ArgumentError)
+    end
   end
 
   context 'Method Reverse' do
