@@ -18,12 +18,15 @@ describe Solver do
       expect { @solver.factorial(-5) }.to raise_error(ArgumentError)
     end
   end
+
   context 'Method Reverse' do
     it 'If the input parameter is not a string, it returns an argument error' do
       expect { @solver.reverse(15) }.to raise_error(ArgumentError)
-  end
-  it 'Return the input string in reverse order' do
-    reverse_string = @solver.reverse('hello')
-    expect(reverse_string).to eql 'olleh'
+    end
+
+    it 'Return the input string in reverse order' do
+      reverse_string = @solver.reverse('hello')
+      expect(reverse_string).to eql 'olleh'
+    end
   end
 end
