@@ -36,7 +36,7 @@ describe Solver do
 
   context 'Tests for the "fizzbuzz" method' do
     it 'The method should only accept integers as arguments' do
-      expect { @solver.reverse('15') }.to raise_error(ArgumentError)
+      expect { @solver.fizzbuzz('15') }.to raise_error(ArgumentError)
     end
 
     it 'When the argument is divisble by 3 should return "fizz"' do
